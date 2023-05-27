@@ -19,7 +19,7 @@ int main() {
 		if((result = countWords(filePath)) != -1) 
 			cout<<"经统计，共有 "<<result<<" 个单词。"<<endl;
 	} else {
-		cout<<"Error Input!";
+		cout<<"Error input!";
 	}
 	return 0;
 }
@@ -27,7 +27,7 @@ int main() {
 FILE* readFile(string filePath) {
 	FILE* file;
 	if((file = fopen(filePath.data(), "r")) == NULL) {
-		cout<<"File not find!";
+		cout<<"File not found!";
 		return NULL;
 	}
 	return file;
